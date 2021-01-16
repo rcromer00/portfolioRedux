@@ -50,15 +50,34 @@ body, html {
 
 /* Hover Effect */
 .zoom {
-  /* padding: 50px; */
   background-color: black;
   transition: transform .2s;
-  /* width: 200px;
-  height: 200px; */
   margin: 0 auto;
 }
 .zoom:hover {
   transform: scale(1.565);
 }
-
-
+#myWork:hover img,
+#myWork:active img {
+  opacity: 0.3;
+}
+#myWork:hover img:hover,
+#myWork:active img:active {
+  opacity: 1;
+}
+div.hoverable {
+  display: none;
+  margin-top: -7em;
+  margin-left: 4em;
+} 
+#projAbout{
+  display: none;
+}
+p.hoverable {
+  color: white;
+}
+#title {
+  font-family: "Lato", sans-serif;
+    background-color: rgba(0, 0, 0, 0.493);
+    position: relative;
+}

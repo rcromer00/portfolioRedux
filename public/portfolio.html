@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="CSS/style.css">
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -47,26 +48,32 @@
   
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
-      <div class="w3-col m3">
-        <a href="https://github.com/rcromer00/Workday-Planner" target="_blank"><img src="https://i.imgur.com/ChqPztJ.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="Workday Planner"/></a>                   
+      <div class="w3-col m3"  id="myWork">
+        <a href="https://github.com/rcromer00/Workday-Planner" target="_blank"><img src="https://i.imgur.com/ChqPztJ.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="Workday Planner"/></a>   
+        <h3 id="title">Note-taker</h3>
+        <p class="hoverable" id="projAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
       </div>
   
-      <div class="w3-col m3">
+      <div class="w3-col m3"  id="myWork1">
         <a href="https://github.com/alysonbennett/Weather-Jams" target="_blank"><img src="https://i.imgur.com/HqhUrLH.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="WeatherJams"/></a>
-      </div>
+        <h3 id="title">WeatherJams</h3>    
+        <p class="hoverable" id="projAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+    </div>
   
-      <div class="w3-col m3">
+      <div class="w3-col m3" id="myWork2">
         <a href="https://github.com/rcromer00/NodeExpressBurgerApp" target="_blank"><img src="/img/burgerApp.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="Burger App"/></a>
+        <h3 id="title">Burger App</h3>
+        <p class="hoverable" id="projAbout">This is example text. Hello World!</p>                
     </div>
   
-      <div class="w3-col m3">
+      <div class="w3-col m3" id="myWork3">
        <a href="https://github.com/alysonbennett/Project_2" target="_blank"><img src="/img/HappyPaws.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="Happy Paws"/></a>
-      </div>
+       <h3 id="title">Happy Paws</h3>
+       <p class="hoverable" id="projAbout">This is example text. Hello World!</p>                
     </div>
-  
-    <!-- Placeholder for more entries -->
-    <!-- <div class="w3-row-padding w3-center w3-section">   -->
-  <br>
+    </div><br>
 
   <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
@@ -80,6 +87,41 @@
   </footer>
 
   <script src="/JS/index.js"></script>
+  <script>
+      function pageLoad() {
+          $("#projAbout").hide();
+        }
+        
+    $("#myWork").mouseenter(function(){
+	$(this).find(".hoverable").show();
+});
+$("#myWork").mouseleave(function(){
+	$(this).find(".hoverable").hide();
+});
+
+$("#myWork1").mouseenter(function(){
+	$(this).find(".hoverable").show();
+});
+$("#myWork1").mouseleave(function(){
+	$(this).find(".hoverable").hide();
+});
+
+
+$("#myWork2").mouseenter(function(){
+	$(this).find(".hoverable").show();
+});
+$("#myWork2").mouseleave(function(){
+	$(this).find(".hoverable").hide();
+});
+
+
+$("#myWork3").mouseenter(function(){
+	$(this).find(".hoverable").show();
+});
+$("#myWork3").mouseleave(function(){
+	$(this).find(".hoverable").hide();
+});
+  </script>
 
 </body>
 </html>
