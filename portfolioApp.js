@@ -9,5 +9,5 @@ app.use(express.urlencoded({extended: true}));
 app.use("/", htmlRoutes);
 
 app.listen(PORT, () => {
-    console.log("Express server listening on port %d in %s mode", this.address().PORT, app.settings.env)
+    console.log("Server listening on:" + PORT)
 });
