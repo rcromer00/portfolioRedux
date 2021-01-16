@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Ronnie Cromer: WebDev Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -50,28 +50,30 @@
     <div class="w3-row-padding w3-center">
       <div class="w3-col m3"  id="myWork">
         <a href="https://github.com/rcromer00/Workday-Planner" target="_blank"><img src="https://i.imgur.com/ChqPztJ.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="Workday Planner"/></a>   
-        <h3 id="title">Note-taker</h3>
-        <p class="hoverable" id="projAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+        <h3 id="title">Workday Planner</h3>
+        <p class="hoverable" id="projAbout">This application is designed as a workday planner that lets users assign and save periods of time
+            in their workday to better prioritize and plan out their day accordingly.</p>
       </div>
   
       <div class="w3-col m3"  id="myWork1">
         <a href="https://github.com/alysonbennett/Weather-Jams" target="_blank"><img src="https://i.imgur.com/HqhUrLH.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="WeatherJams"/></a>
         <h3 id="title">WeatherJams</h3>    
-        <p class="hoverable" id="projAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+        <p class="hoverable" id="projAbout">This application is a simple user interface that lets users not only 
+            view the weather in their current location as well as other cities but it gives users the option to play music that corresponds with the current weather conditions. </p>
     </div>
   
       <div class="w3-col m3" id="myWork2">
         <a href="https://github.com/rcromer00/NodeExpressBurgerApp" target="_blank"><img src="/img/burgerApp.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="Burger App"/></a>
         <h3 id="title">Burger App</h3>
-        <p class="hoverable" id="projAbout">This is example text. Hello World!</p>                
+        <p class="hoverable" id="projAbout">This project was designed using a MySQL database. It is made to let users enter their favorite burger into the field which transports that data to store in the database.
+            This project taught me how SQL databases communicate with front-end code.
+        </p>                
     </div>
   
       <div class="w3-col m3" id="myWork3">
        <a href="https://github.com/alysonbennett/Project_2" target="_blank"><img src="/img/HappyPaws.gif" style="width:100%" onclick="onClick(this)" class="zoom" title="Happy Paws"/></a>
        <h3 id="title">Happy Paws</h3>
-       <p class="hoverable" id="projAbout">This is example text. Hello World!</p>                
+       <p class="hoverable" id="projAbout">This project was a collaboration effort, we created a dog day care website which allows users to create an account and book reservations for their dog's stay.</p>                
     </div>
     </div><br>
 
@@ -91,7 +93,7 @@
       function pageLoad() {
           $("#projAbout").hide();
         }
-        
+
     $("#myWork").mouseenter(function(){
 	$(this).find(".hoverable").show();
 });
