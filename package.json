@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "node portfolioApp.js"
+    "start": "node portfolioApp"
 },
   "name": "portfolio",
   "version": "1.0.0",
